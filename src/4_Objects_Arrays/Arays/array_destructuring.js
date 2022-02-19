@@ -1,3 +1,5 @@
+'use strict';
+
 const array = ['a', {b: 'b'}, ['c'], 1, true];
 
 const [a, b, c, d, e] = array;

@@ -1,3 +1,5 @@
+'use strict';
+
 const a = b = {c: 1};
 
 b.d = 2;
