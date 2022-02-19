@@ -1,48 +1,51 @@
-"use strict";
+'use strict';
 
-const let_var = function() {
+const letVar = function() {
   // let & var:
-  var a = 5;
+  const a = 5;
+  // eslint-disable-next-line no-var
   var b = 10;
 
   if (a === 5) {
-    let a = 4; // El alcance es dentro del bloque if
+    const a = 4; // El alcance es dentro del bloque if
+    // eslint-disable-next-line no-var
     var b = 1; // El alcance es global
 
-    console.log(a);  // 4
-    console.log(b);  // 1
+    console.log(a); // 4
+    console.log(b); // 1
   }
 
   console.log(a); // 5
   console.log(b); // 1
-}
+};
 
-const env_functions = function() {
+const envFunctions = function() {
   // Environment functions
-  console.log("Hello World!"); // Prints on terminal
-  prompt("Enter your name:"); // Show on web page a questions and resquest the asnwer
-  alert("Your password is too short!"); // Show on web page an alert
+  console.log('Hello World!'); // Prints on terminal
+  // Show on web page a questions and resquest the asnwer
+  prompt('Enter your name:');
+  alert('Your password is too short!'); // Show on web page an alert
 
   // Math
   console.log(Math.max([1, 4, 7, 2, 3]));
   console.log(Math.cos(0.53));
   console.log(Math.floor(9.9999));
-}
+};
 
 const conditionals = function() {
   // Conditionals
-  let a = 10;
+  const a = 10;
   if (a === 10) {
-    console.log("if");
+    console.log('if');
   }
   switch (a) {
     case 10:
-      console.log("switch");
+      console.log('switch');
       break;
     default:
-      console.log("Error");
+      console.log('Error');
   }
-}
+};
 
 const loops = function() {
   // Loops
@@ -52,7 +55,7 @@ const loops = function() {
     i++;
   }
 
-  let i = 0;
+  i = 0;
   do {
     console.log(i);
     i++;
@@ -62,20 +65,22 @@ const loops = function() {
     console.log(i);
   }
 
-  let obj = {a: "Hello", b: "World", c: "!"};
-  for (let element in obj) {
+  const obj = {a: 'Hello', b: 'World', c: '!'};
+  // eslint-disable-next-line guard-for-in
+  for (const element in obj) {
     console.log(element, obj[element]);
   }
 
-  let list = ["Hello", "World", "!"];
-  for (let element of list) {
+  const list = ['Hello', 'World', '!'];
+  for (const element of list) {
     console.log(element);
   }
-}
+};
 
+// eslint-disable-next-line require-jsdoc
 function main() {
-  let_var();
-  env_functions();
+  letVar();
+  envFunctions();
   conditionals();
   loops();
 }

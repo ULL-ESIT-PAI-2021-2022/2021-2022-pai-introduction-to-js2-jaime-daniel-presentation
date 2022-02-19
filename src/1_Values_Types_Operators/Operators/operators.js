@@ -1,10 +1,11 @@
-"use strict";
+'use strict';
 
-function main() {  
+// eslint-disable-next-line require-jsdoc
+function main() {
   // EQUALITY OPERATORS:
   // ===, !==, ==, !=
-  let x = 10;
-  let y = "10";
+  const x = 10;
+  const y = '10';
   console.log(x === y);
   console.log(x !== y);
   console.log(x == y);
@@ -12,10 +13,10 @@ function main() {
 
   // OR, AND ASSIGNMENT OPERATORS:
   // ||, &&
-  let a = 10 || 20;
-  let b = false || 20;
-  let c = 10 && 20;
-  let d = null && 20;
+  const a = 10 || 20;
+  const b = false || 20;
+  const c = 10 && 20;
+  const d = null && 20;
   console.log(a);
   console.log(b);
   console.log(c);

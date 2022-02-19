@@ -7,11 +7,13 @@ function sayWith(includedText) {
 
 const sayWithHello = sayWith('Hello,');
 
+// eslint-disable-next-line require-jsdoc
 function minus(a, b) {
   if (b === undefined) return -a;
   else return a - b;
 }
 
+// eslint-disable-next-line require-jsdoc
 function main() {
   console.log(sayWithHello('Jaime'));
   console.log(minus(10));

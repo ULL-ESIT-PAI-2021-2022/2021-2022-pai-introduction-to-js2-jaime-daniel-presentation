@@ -1,10 +1,11 @@
 'use strict';
 
+// eslint-disable-next-line require-jsdoc
 function main() {
-  let array = [1, 2, 3, 4, 5];
+  const array = [1, 2, 3, 4, 5];
   console.log(array.length);
 
-  let string = "Hello";
+  const string = 'Hello';
   console.log(string.length);
   console.log(string.toUpperCase());
 

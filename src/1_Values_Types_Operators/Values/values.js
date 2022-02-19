@@ -1,11 +1,12 @@
-"use strict";
+'use strict';
 
+// eslint-disable-next-line require-jsdoc
 function main() {
   // STRINGS:
   // Strings can be defined with single or double quotes.
-  str1 = "Hello";
+  str1 = 'Hello';
   str2 = ' World';
-  console.log(str1 + str2 + "!");
+  console.log(str1 + str2 + '!');
 
   // Also works with back-ticks:
   str3 = `${str1}${str2}!`;
