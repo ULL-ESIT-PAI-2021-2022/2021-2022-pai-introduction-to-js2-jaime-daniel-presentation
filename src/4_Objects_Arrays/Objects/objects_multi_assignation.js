@@ -1,8 +1,12 @@
 'use strict';
 
-let b = 1;
-const a = b = {c: 1};
+const b = {c: 1};
+const a = b;
 
-b.d = 2;
+
+b.d = {d: 2};
+a.e = 2;
 
 console.log(a);
+console.log(b);
+
