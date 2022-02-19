@@ -1,3 +1,5 @@
+'use strict';
+
 console.log(null || 'user');
 console.log('Juan' ||'user');
 
