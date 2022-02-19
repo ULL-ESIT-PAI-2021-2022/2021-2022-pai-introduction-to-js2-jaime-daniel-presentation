@@ -1,3 +1,5 @@
+'use strict';
+
 const juan = {
   userName: 'Juan',
   sayHi() {

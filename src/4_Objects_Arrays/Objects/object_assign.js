@@ -1,3 +1,5 @@
+'use strict';
+
 const b = {c: 2};
 const a = {};
 Object.assign(a, b);

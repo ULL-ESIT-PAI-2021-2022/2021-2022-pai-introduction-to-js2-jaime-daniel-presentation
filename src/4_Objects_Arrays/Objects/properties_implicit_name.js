@@ -1,3 +1,5 @@
+'use strict';
+
 const sayHi = () => {
   console.log('Hi');
 };

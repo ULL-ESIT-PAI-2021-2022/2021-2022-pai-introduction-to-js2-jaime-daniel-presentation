@@ -1,3 +1,5 @@
+'use strict';
+
 // eslint-disable-next-line require-jsdoc
 function sayParameters(...values) {
   for (const value of values) {
