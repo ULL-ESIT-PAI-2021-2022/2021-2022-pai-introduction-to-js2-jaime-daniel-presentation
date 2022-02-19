@@ -7,14 +7,17 @@ function sayWith(includedText) {
 
 const sayWithHello = sayWith('Hello,');
 
-console.log(sayWithHello('Jaime'));
-
 function minus(a, b) {
   if (b === undefined) return -a;
   else return a - b;
 }
 
-console.log(minus(10));
-// → -10
-console.log(minus(10, 5));
-// → 5
+function main() {
+  console.log(sayWithHello('Jaime'));
+  console.log(minus(10));
+  console.log(minus(10, 5));
+}
+
+if (require.main === module) {
+  main();
+}
