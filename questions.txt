@@ -1,0 +1,49 @@
+How can you implement Objects in C++?
+a. with Arrays
+b. with Hash Tables
+c. with Matrices
+
+What is the use of JSON files?
+a. save and load data
+b. save and load strings and arrays
+c. save and load objects
+
+How can you iterate over an array?
+a. with a for ... in loop
+b. with a for ... of loop
+c. both
+
+Given a const object:
+a. you can change the value of the keys
+b. you can change the object
+c. you can not change neither
+
+If we have the next code function hi(user) {console.log(user.name)}. What is more likely to happen if we call hi()?
+a. An error will pop up because user is not defined
+b. An error will pop up because cannot read property 'name'
+c. It will print undefined
+
+What checks ===?
+a. the value of left and right sides
+b. the value and the type
+c. the same object
+
+If we have this two object a = {c:b}, b = {d:a}. What will happen in b if we delete a?
+a. b.d will be undefined
+b. b.d will be null
+c. b.d will still have the object
+
+What is the result of '1' + 1?
+a. 2
+b. type error
+c. '11'
+
+null is equal to undefined?
+a. depends
+b. true
+c. false
+
+Difference between declared functions and assigned functions?
+a. There's no difference
+b. Only that assigned functions can be reassigned in another variable
+c. Declared functions can be called before being defined
